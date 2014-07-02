@@ -317,6 +317,138 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B6C5BDB1963E6A20021C5BA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = include/CSURITemplate;
+				PUBLIC_HEADERS_FOLDER_PATH = include/CSURITemplate;
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		8B6C5BDC1963E6A20021C5BA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CSURITemplate.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wimplicit-atomic-properties",
+					"-Wstrict-selector-match",
+					"-Wsign-conversion",
+				);
+			};
+			name = Distribution;
+		};
+		8B6C5BDD1963E6A20021C5BA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
+				INFOPLIST_FILE = "CSURITemplateTests/CSURITemplateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+		8B6C5BDE1963E6A80021C5BA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = include/CSURITemplate;
+				PUBLIC_HEADERS_FOLDER_PATH = include/CSURITemplate;
+				SDKROOT = iphoneos;
+			};
+			name = Test;
+		};
+		8B6C5BDF1963E6A80021C5BA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CSURITemplate.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wimplicit-atomic-properties",
+					"-Wstrict-selector-match",
+					"-Wsign-conversion",
+				);
+			};
+			name = Test;
+		};
+		8B6C5BE01963E6A80021C5BA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
+				INFOPLIST_FILE = "CSURITemplateTests/CSURITemplateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Test;
+		};
 		BE84573416DCC1BF00DFD1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,8 +475,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = include/CSURITemplate;
+				PUBLIC_HEADERS_FOLDER_PATH = include/CSURITemplate;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -368,7 +502,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRIVATE_HEADERS_FOLDER_PATH = include/CSURITemplate;
+				PUBLIC_HEADERS_FOLDER_PATH = include/CSURITemplate;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -445,6 +581,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE84573416DCC1BF00DFD1C0 /* Debug */,
+				8B6C5BDE1963E6A80021C5BA /* Test */,
+				8B6C5BDB1963E6A20021C5BA /* Distribution */,
 				BE84573516DCC1BF00DFD1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -454,6 +592,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE84573716DCC1BF00DFD1C0 /* Debug */,
+				8B6C5BDF1963E6A80021C5BA /* Test */,
+				8B6C5BDC1963E6A20021C5BA /* Distribution */,
 				BE84573816DCC1BF00DFD1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -463,6 +603,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE84573A16DCC1BF00DFD1C0 /* Debug */,
+				8B6C5BE01963E6A80021C5BA /* Test */,
+				8B6C5BDD1963E6A20021C5BA /* Distribution */,
 				BE84573B16DCC1BF00DFD1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
